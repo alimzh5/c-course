@@ -92,3 +92,27 @@ Example in Windows:
 Driver: A kernel module that enables the OS to communicate and work with specific hardware or software devices.
 
 ****
+
+****
+### PE and ELF File Formats
+**PE (Portable Executable)**:
+
+The standard executable file format used in Windows.
+
+Contains headers, sections for code, data, resources, and information needed by the Windows loader to run the program.
+
+**ELF (Executable and Linkable Format)**:
+
+The standard executable file format used in Unix/Linux systems.
+
+Stores program instructions, data, symbol tables, and sections that help the OS loader manage the program.
+
+**How OS Loads Executable Files**
+The OS reads the executable’s header to understand its structure (e.g., code size, data size, entry point).
+
+It loads the necessary sections (code, data) into memory.
+
+It sets up the process environment (stack, heap, registers).
+
+Finally, it jumps to the program’s entry point to start execution.
+****
