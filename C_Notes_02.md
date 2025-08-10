@@ -74,3 +74,26 @@
 * A system call that monitors multiple file descriptors (e.g., sockets or files) and tells you when one is ready for reading/writing.
 
 ****
+### `movl` in Assembly
+In x86 assembly, `movl` means move 32-bit (long) data from one place to another.
+
+Example: `movl %eax, %ebx` → copy value from EAX register to EBX register.
+****
+### GCC Compilation Steps
+```
+# Generate assembly code from C
+gcc -S test.c -o test.s
+
+# Compile with debug info for GDB
+gcc -g test.c -o test
+```
+****
+### Debugging with GDB (TUI mode)
+```
+# Open in GDB with Text User Interface
+gdb -tui ./test
+
+# Split view: source code + assembly
+layout split
+```
+***
