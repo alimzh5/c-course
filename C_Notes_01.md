@@ -141,3 +141,19 @@ Caption: The process of converting a C program into an executable: from source c
 
 **Borland C** – Older C/C++ compiler and IDE for DOS/Windows.
 ***
+
+****
+### Macros in Preprocessing
+Macro: A preprocessor directive that defines a name or expression to be replaced before compilation, often used for constants or simple code snippets.
+
+### Metaprogramming
+Writing code that generates or modifies other code at compile-time or runtime, allowing automation, code reuse, and dynamic behavior.
+****
+
+****
+**Compiler**: Translates C source code into assembly, checks for errors, and may optimize the code for better performance.
+
+**Assembler**: Converts assembly code line-by-line into equivalent machine code (object file).
+
+**Linker**: Combines object files and libraries into a final executable format that the OS can run.
+****
