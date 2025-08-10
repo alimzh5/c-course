@@ -116,3 +116,5 @@ It sets up the process environment (stack, heap, registers).
 
 Finally, it jumps to the program’s entry point to start execution.
 ****
+
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/C%D9%80Program%D9%80Compilation%D9%80Process.png)
