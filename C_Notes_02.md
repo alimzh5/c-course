@@ -50,3 +50,27 @@
 
 **Zephyr** – A scalable, open-source real-time operating system designed for embedded devices, supporting multiple architectures.
 ****
+### Async & Non-blocking Programming
+* In non-blocking programming, you don’t wait for a task to finish before moving on; instead, you check later if it’s ready.
+
+* Example: read from a network — if data exists, take it; if not, move to the next task and check again later.
+
+* You can also set timeouts to avoid waiting too long for one task.
+
+* This allows multiple tasks to progress in parallel, similar to software-level time-sharing.
+
+### Detecting Changes
+* **Polling** – Regularly check if something changed (CPU intensive and inefficient).
+
+* **Polling with Sleep** – Pause between checks to reduce CPU load (still inefficient if changes are rare).
+
+* **Interrupts** – Hardware notifies you when an event happens (efficient).
+
+* **Inotify** – Software mechanism to notify on file changes.
+
+* **Signals** – OS interrupts the normal flow to handle a specific event.
+
+### Select
+* A system call that monitors multiple file descriptors (e.g., sockets or files) and tells you when one is ready for reading/writing.
+
+****
