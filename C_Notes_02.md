@@ -23,7 +23,6 @@
 * CPUs can boost frequency temporarily under high load (dynamic frequency scaling).
 ****
 
-****
 **/proc Folder**
 * A virtual filesystem where the kernel shares reports, status, and information with user space.
 
@@ -47,7 +46,6 @@
 
 ****
 
-****
 **FreeRTOS** – A lightweight, open-source real-time operating system widely used in embedded and IoT devices.
 
 **Zephyr** – A scalable, open-source real-time operating system designed for embedded devices, supporting multiple architectures.
