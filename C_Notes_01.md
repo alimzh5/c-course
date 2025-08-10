@@ -193,3 +193,24 @@ echo $PATH
 Shows the list of directories searched for executables.
 
 ****
+
+****
+**Statement**
+An independent instruction in a program, usually ending with a semicolon ;.
+
+Can stand alone and perform an action.
+
+Example:
+```
+x = 5;
+```
+**Expression**
+A combination of variables, values, and operators that produces a value.
+
+Cannot do anything by itself unless part of a statement.
+
+Example:
+```
+x + 3
+```
+****
