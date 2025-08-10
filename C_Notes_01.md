@@ -57,7 +57,6 @@ ____
 <br><br> 
 **Pluggable Firmware OS** – A type of firmware-based operating system that, unlike regular firmware, can be replaced or upgraded like a plugin.
 **Use case**: Allows switching between different tasks or applications through software instead of changing hardware.
-____
 
 ****
 **Unix** – A multiuser, multitasking operating system originally developed in the 1970s, foundation for many modern OS.
@@ -69,7 +68,6 @@ ____
 **Linux** – An open-source Unix-like OS kernel created by Linus Torvalds, inspired by Minix.
 ****
 
-****
 ### User Space vs Kernel Space
 **Kernel Space**: The memory area where the core of the operating system (kernel) runs with full access to hardware. It manages system resources and controls hardware.
 
@@ -81,7 +79,6 @@ ____
 **Kernel**: The central part of the OS running in kernel space, responsible for managing hardware, processes, memory, and system calls.
 ****
 
-****
 ### Kernel Modules / Subsystems
 **Kernel Module**: A piece of code that can be loaded into the kernel to add new functionality without rebooting.
 
@@ -93,7 +90,6 @@ Driver: A kernel module that enables the OS to communicate and work with specifi
 
 ****
 
-****
 ### PE and ELF File Formats
 **PE (Portable Executable)**:
 
@@ -116,11 +112,11 @@ It sets up the process environment (stack, heap, registers).
 
 Finally, it jumps to the program’s entry point to start execution.
 ****
-****
+
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/C%D9%80Program%D9%80Compilation%D9%80Process.png)
 Caption: The process of converting a C program into an executable: from source code through preprocessor, compiler, assembly, object file, linker, and finally to the executable.
 ****
-****
+
 ### Assemblers
 **NASM** – Netwide Assembler, popular for x86 architecture.
 
@@ -140,9 +136,8 @@ Caption: The process of converting a C program into an executable: from source c
 **AMD Compiler** – AMD’s optimized compiler tools.
 
 **Borland C** – Older C/C++ compiler and IDE for DOS/Windows.
-***
-
 ****
+
 ### Macros in Preprocessing
 Macro: A preprocessor directive that defines a name or expression to be replaced before compilation, often used for constants or simple code snippets.
 
@@ -150,7 +145,6 @@ Macro: A preprocessor directive that defines a name or expression to be replaced
 Writing code that generates or modifies other code at compile-time or runtime, allowing automation, code reuse, and dynamic behavior.
 ****
 
-****
 **Compiler**: Translates C source code into assembly, checks for errors, and may optimize the code for better performance.
 
 **Assembler**: Converts assembly code line-by-line into equivalent machine code (object file).
@@ -158,7 +152,6 @@ Writing code that generates or modifies other code at compile-time or runtime, a
 **Linker**: Combines object files and libraries into a final executable format that the OS can run.
 ****
 
-****
 ### Example GCC Compilation Command:
 ```
 gcc test.c -o test
@@ -170,7 +163,6 @@ gcc test.c -o test
 **-o test** – Output option, names the compiled executable test.
 ****
 
-****
 ### File Paths in Linux
 **Absolute Path**: Full directory path starting from / (root).
 
@@ -194,7 +186,6 @@ Shows the list of directories searched for executables.
 
 ****
 
-****
 **Statement**
 An independent instruction in a program, usually ending with a semicolon ;.
 
@@ -215,7 +206,6 @@ x + 3
 ```
 ****
 
-****
 ## Data Type
 Defines the storage format of data: includes size and structure (layout).
 
@@ -233,7 +223,6 @@ Specifies the valid operations that can be performed on the data.
 The compiler determines the data type of each value (e.g., whether it’s an integer, float, or character) during compilation.
 ****
 
-****
 ### Addressing in 32-bit and 64-bit Systems
 
 **32-bit system**:
