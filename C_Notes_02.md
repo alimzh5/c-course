@@ -46,3 +46,9 @@
 * Guarantees that a task will run at a specific time, unlike general time-sharing OS where delays are possible.
 
 ****
+
+****
+**FreeRTOS** – A lightweight, open-source real-time operating system widely used in embedded and IoT devices.
+
+**Zephyr** – A scalable, open-source real-time operating system designed for embedded devices, supporting multiple architectures.
+****
