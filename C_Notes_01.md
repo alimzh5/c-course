@@ -157,3 +157,15 @@ Writing code that generates or modifies other code at compile-time or runtime, a
 
 **Linker**: Combines object files and libraries into a final executable format that the OS can run.
 ****
+
+****
+### Example GCC Compilation Command:
+```
+gcc test.c -o test
+```
+**gcc** – GNU Compiler Collection.
+
+**test.c** – Source file written in C.
+
+**-o test** – Output option, names the compiled executable test.
+****
