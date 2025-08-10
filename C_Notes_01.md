@@ -232,3 +232,21 @@ Specifies the valid operations that can be performed on the data.
 ## Note:
 The compiler determines the data type of each value (e.g., whether it’s an integer, float, or character) during compilation.
 ****
+
+****
+### Addressing in 32-bit and 64-bit Systems
+
+**32-bit system**:
+
+Uses 32-bit addresses.
+
+Can address up to 2^32 = 4,294,967,296 unique memory locations (~4 GB).
+
+**64-bit system**:
+
+Uses 64-bit addresses.
+
+Can theoretically address up to 2^64 ≈ 1.84×10^19 memory locations (very large).
+
+Note: Actual usable memory is usually less due to hardware and OS limitations.
+****
