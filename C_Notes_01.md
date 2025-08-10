@@ -120,3 +120,24 @@ Finally, it jumps to the program’s entry point to start execution.
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/C%D9%80Program%D9%80Compilation%D9%80Process.png)
 Caption: The process of converting a C program into an executable: from source code through preprocessor, compiler, assembly, object file, linker, and finally to the executable.
 ****
+****
+### Assemblers
+**NASM** – Netwide Assembler, popular for x86 architecture.
+
+**MASM** – Microsoft Macro Assembler, assembler for Windows/x86.
+
+### Compilers
+**GCC** – GNU Compiler Collection, supports C, C++, and more.
+
+**Clang** – Compiler frontend for C/C++/Objective-C, part of LLVM.
+
+**Xcode** – Apple’s IDE with built-in LLVM/Clang compiler for macOS/iOS.
+
+**Visual Studio** – Microsoft IDE with MSVC compiler.
+
+**Intel C Compiler (ICC)** – Optimized C/C++ compiler from Intel.
+
+**AMD Compiler** – AMD’s optimized compiler tools.
+
+**Borland C** – Older C/C++ compiler and IDE for DOS/Windows.
+***
