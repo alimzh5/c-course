@@ -214,3 +214,21 @@ Example:
 x + 3
 ```
 ****
+
+****
+## Data Type
+Defines the storage format of data: includes size and structure (layout).
+
+Specifies the valid operations that can be performed on the data.
+
+## Basic Types:
+
+**Integer** – Whole numbers.
+
+**Float** – Numbers with fractional parts.
+
+**Character** – Single characters.
+
+## Note:
+The compiler determines the data type of each value (e.g., whether it’s an integer, float, or character) during compilation.
+****
