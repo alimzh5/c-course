@@ -169,3 +169,27 @@ gcc test.c -o test
 
 **-o test** – Output option, names the compiled executable test.
 ****
+
+****
+### File Paths in Linux
+**Absolute Path**: Full directory path starting from / (root).
+
+**Relative Path**: Path relative to the current working directory.
+
+**Special directories**:
+
+./ – Current directory.
+
+../ – Parent directory.
+
+**Command search path**:
+
+If a command (e.g., ls) is run without specifying a path, the shell searches directories listed in the $PATH environment variable and runs the first match it finds.
+
+Example:
+```
+echo $PATH
+```
+Shows the list of directories searched for executables.
+
+****
