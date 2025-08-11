@@ -309,3 +309,48 @@ void foo() {
   * Sometimes lacks modern protections like ASLR or stack canaries.
 
 ****
+### Modifiers and Integer Types in C
+* Modifiers change how the compiler treats variables and types.
+
+* `signed` and `unsigned` specify whether integers can be negative.
+
+  *Signed integers use 2's complement representation.
+
+* Integer sizes:
+
+  * `short` (usually 2 bytes)
+
+  * `int` (commonly 4 bytes, default integer type)
+
+  * `long` (4 or 8 bytes depending on system)
+
+  * `long long` (at least 8 bytes)
+
+* Example: Number 300 stored in 2 bytes:
+
+```
+[00000001] [00101100]
+```
+*****
+### Endianness
+* **Big Endian**:
+
+  * Stores the most significant byte first (lowest memory address).
+
+  * CPU waits for the most significant byte before starting calculations.
+
+  * Used in older CPUs and many network protocols by default.
+
+* **Little Endian**:
+
+  * Intel introduced this idea.
+
+  * Stores the least significant byte first (lowest memory address).
+
+  * Bytes are reversed compared to big endian, but bit order inside each byte remains the same.
+
+  * Enables faster computation start since least significant byte arrives first.
+
+  * Used in most modern CPUs and devices.
+
+*****
