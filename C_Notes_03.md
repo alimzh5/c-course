@@ -12,6 +12,7 @@
 
 * Useful for debugging at both high-level code and low-level machine instructions simultaneously.
 ******
+### Debugging View: Source and Assembly Code
 
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/Debugging%20View%20Source%20and%20Assembly%20Code.png)
 
