@@ -206,7 +206,9 @@ This means we cannot store real physical addresses in the generated machine code
 * Allows features like paging, swapping, and memory protection.
 ****
 ### Memory Layout of a Process
+
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/Process%20Memory%20Layout.png)
+
 When a program is loaded into memory, its address space is divided into several regions, each with a specific purpose:
 
 1) **Text Segment**
