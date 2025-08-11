@@ -129,11 +129,17 @@ Example: Interrupting execution, editing instructions in memory, and resuming.
 ### Debug commands
 
 **Command**       **Description**
-  `step`	          Execute next line, enter functions
-  `next`	          Execute next line, skip over functions
-  `ni`	            Execute next assembly instruction
-  `si`	            Step into assembly call
-  `continue`	      Resume until next breakpoint
-  `layout split`	  Show source + assembly side by side
+  `step`	 
+   Execute next line, enter functions
+  `next`	
+   Execute next line, skip over functions
+  `ni`	
+   Execute next assembly instruction
+  `si`	
+   Step into assembly call
+  `continue`	  
+   Resume until next breakpoint
+  `layout split`	
+   Show source + assembly side by side
 
 ****
