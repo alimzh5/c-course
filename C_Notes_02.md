@@ -97,3 +97,19 @@ gdb -tui ./test
 layout split
 ```
 ***
+### GDB Common Commands
+`ni` (next instruction) → Executes the next assembly instruction.
+
+`b <line>` → Set breakpoint at the given source line (e.g., `b 4` → start debugging at line 4).
+
+`step` → Go inside function calls, execute line by line (source level).
+
+`next` → Execute the current source line but skip inside functions.
+****
+### Code Modification & Security Risk
+If code is modified between instructions (e.g., between line 3 and 4), the binary’s hash changes.
+
+In security, this can be exploited — malicious code (virus) could be injected at runtime via such modifications.
+
+Example: Interrupting execution, editing instructions in memory, and resuming.
+*******
