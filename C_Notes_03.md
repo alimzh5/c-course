@@ -43,3 +43,68 @@ For example, a CPU with 4 cores can run 4 threads truly in parallel.
 * Cores are hardware units that run threads.
 
 ****
+
+### Data Types and Portability in C
+
+* C is not object-oriented, and you cannot perform operations like addition directly on structs.
+
+* Except for struct, union, enum, and array, all other types represent numbers.
+
+* Even char is a number type occupying 1 byte in memory.
+
+* Everything in memory is stored as numbers (bits and bytes).
+  
+****
+
+### Writing Portable Code for 32-bit and 64-bit Systems
+
+* Standard integer types like `int8_t`, `uint8_t`, `int64_t` are not part of the original C standard, but come from libraries (e.g., `<stdint.h>`).
+
+* Using these types ensures fixed size but creates a dependency on those libraries.
+
+* Another method is using macros to detect the platform (32-bit or 64-bit) and change data types accordingly.
+
+* The macro can call the proper library functions or typedefs based on the detected system.
+
+* Modifiers like `short`, `long`, `signed` change size or sign of the type.
+
+* Example: On a 64-bit system, `int` might be equivalent to `signed long int`.
+  
+****
+
+### C Has No Runtime Overhead
+
+* C does not have a runtime system that adds extra code during program execution.
+
+* No automatic checks or protections are added by the compiler or runtime.
+
+* Example: If you store the number 300 in a 1-byte variable, it wraps around and stores 44 (300 mod 256 = 44).
+
+* This wrap-around (overflow) behavior can sometimes be used intentionally in programs.
+
+* However, it can also lead to bugs if not handled carefully.
+
+****
+
+### Runtime and Writing Operating Systems
+
+* Languages like C, C++, and Rust do not require a runtime system by default (or have minimal runtime).
+
+* Because they lack heavy runtime overhead, they are well-suited for writing operating systems and low-level system software.
+
+* This gives programmers full control over memory, hardware, and execution without hidden layers interfering.
+
+* Many OS kernels and embedded systems are written in these languages for this reason.
+
+****
+
+### No Runtime Means Direct CPU Execution
+
+* When a language has no runtime, the compiled code runs directly on the CPU without extra layers or virtual machines.
+
+* This allows maximum control and efficiency, since no additional code runs behind the scenes.
+
+* Languages like C produce such code that interacts closely with hardware and OS.
+
+****
+
