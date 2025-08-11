@@ -256,3 +256,56 @@ int counter; // no initial value → goes into BSS
 
 * User programs cannot directly access this space (for security and stability).
 ****
+### Dynamic vs Static Memory
+* **Static / Compile-time Memory**
+
+  * Allocated at **program load** (before execution starts).
+
+  * Includes:
+
+    * **Text segment** (code)
+
+    * **Data segment** (initialized globals/static)
+
+    * **BSS segment** (uninitialized globals/static)
+
+  * Size is fixed and known at compile time.
+
+* **Dynamic Memory** (Heap & Stack)
+
+  * Created and freed at runtime.
+
+  * **Heap**:
+
+    * Starts empty and grows upward as you allocate memory with malloc/new.
+
+    * Freed explicitly by the programmer (free/delete).
+
+  * **Stack**:
+
+    * Starts at the top of the process memory space and grows downward as functions are called.
+
+    * Freed automatically when the function returns.
+
+  * If heap and stack meet → Out of memory (stack overflow or heap collision).
+
+### Stack Overflow & Exploits
+* Stack overflow happens when more data is pushed to the stack than it can hold.
+
+* In C, this can occur if you write beyond the bounds of a local array:
+
+```
+void foo() {
+    char buf[10];
+    gets(buf); // if input > 10 bytes → overflow
+}
+```
+* Attackers can overwrite the return address on the stack, making the program jump to malicious code (possibly stored in the heap or even in the stack itself).
+
+* Firmware is especially vulnerable because:
+
+  * Often written in C/C++ (no automatic bounds checking).
+
+  * Sometimes lacks modern protections like ASLR or stack canaries.
+
+****
