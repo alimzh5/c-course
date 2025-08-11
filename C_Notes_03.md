@@ -11,4 +11,8 @@
 * `layout split` shows both the source code and the corresponding assembly instructions side by side.
 
 * Useful for debugging at both high-level code and low-level machine instructions simultaneously.
+******
 
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/Debugging%20View%20Source%20and%20Assembly%20Code.png)
+
+****
