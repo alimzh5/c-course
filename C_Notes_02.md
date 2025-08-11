@@ -173,3 +173,35 @@ Example: Interrupting execution, editing instructions in memory, and resuming.
 
 * Layout and ordering in memory (e.g., `A` before `B` in a struct is compiler/ABI-defined).
 ****
+### Virtual Memory & Memory Allocation in Operating Systems
+An operating system manages RAM by dividing it into small chunks (pages or segments) and assigning them to programs as needed.
+When a program starts, it is given an initial block of memory. If it needs more, the OS allocates additional memory over time.
+
+**Two main problems with direct (physical) allocation**:
+
+1) **Non-contiguous allocation**:
+A program might receive blocks like addresses 1,2,3,4 at first, but when more memory is needed, the OS may give 7,8,9,10 instead of 5,6.
+This creates fragmentation and makes it harder for programs to treat memory as one continuous space.
+
+2) **Unknown addresses at compile time**:
+When compiling a program, the exact physical memory location is not yet known.
+This means we cannot store real physical addresses in the generated machine code.
+
+### Solution: Virtual Memory
+
+* The CPU and OS provide a virtual address space for each program.
+
+* For example, in a 32-bit system, each process can address up to 4 GB of memory, regardless of how much RAM is physically installed.
+
+* The OS maintains a mapping (via the MMU — Memory Management Unit) between virtual addresses and physical addresses.
+
+* The program works with virtual addresses, and the OS transparently translates them to real locations in RAM.
+
+### Benefits:
+
+* Programs can use contiguous virtual memory even if physical memory is scattered.
+
+* Prevents programs from interfering with each other’s memory.
+
+* Allows features like paging, swapping, and memory protection.
+****
