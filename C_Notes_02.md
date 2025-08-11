@@ -113,3 +113,27 @@ In security, this can be exploited — malicious code (virus) could be injected 
 
 Example: Interrupting execution, editing instructions in memory, and resuming.
 *******
+## GDB Basic Workflow
+### Compile with debug info
+
+`gcc -g test.c -o test`
+### Start GDB
+
+`gdb ./test`
+### (Optional) Set breakpoints
+
+`b 4`        # Break at line 4
+### Run the program
+
+`run`
+### Debug commands
+
+**Command**       **Description**
+  `step`	          Execute next line, enter functions
+  `next`	          Execute next line, skip over functions
+  `ni`	            Execute next assembly instruction
+  `si`	            Step into assembly call
+  `continue`	      Resume until next breakpoint
+  `layout split`	  Show source + assembly side by side
+
+****
