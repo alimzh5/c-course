@@ -314,7 +314,7 @@ void foo() {
 
 * `signed` and `unsigned` specify whether integers can be negative.
 
-  *Signed integers use 2's complement representation.
+  * Signed integers use 2's complement representation.
 
 * Integer sizes:
 
