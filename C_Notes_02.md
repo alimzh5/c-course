@@ -205,3 +205,54 @@ This means we cannot store real physical addresses in the generated machine code
 
 * Allows features like paging, swapping, and memory protection.
 ****
+### Memory Layout of a Process
+When a program is loaded into memory, its address space is divided into several regions, each with a specific purpose:
+
+1) **Text Segment**
+
+* Contains the compiled program code (machine instructions).
+
+* Usually read-only to prevent accidental modification of code during execution.
+
+* Shared among processes running the same program to save memory.
+
+2) **Data Segment**
+
+* Stores global and static variables that are initialized in the source code.
+
+* Example:
+
+```
+int counter = 5; // goes into data segment
+```
+3) **BSS Segment** (Block Started by Symbol)
+
+* Stores uninitialized global and static variables.
+
+* Example:
+
+```
+int counter; // no initial value → goes into BSS
+```
+* This section is zero-initialized at program start.
+
+4) **Heap**
+
+* Used for dynamic memory allocation (malloc, calloc, new in C/C++).
+
+* Grows upwards toward higher memory addresses as more memory is allocated.
+
+5) **Stack**
+
+* Stores function call frames, local variables, and return addresses.
+
+* Grows downwards toward lower memory addresses.
+
+* Managed automatically by the compiler.
+
+6) **OS Kernel Space**
+
+* Reserved for the operating system kernel and device drivers.
+
+* User programs cannot directly access this space (for security and stability).
+****
