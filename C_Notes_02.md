@@ -129,11 +129,47 @@ Example: Interrupting execution, editing instructions in memory, and resuming.
 ### Debug commands
 
 **Command**-------**Description**
+
   `step`------------Execute next line, enter functions
+  
   `next`------------Execute next line, skip over functions
+  
   `ni`--------------Execute next assembly instruction
+  
   `si`--------------Step into assembly call
+  
   `continue`--------Resume until next breakpoint
+  
   `layout split`----Show source + assembly side by side
 
+****
+### C Data Types & Memory Representation
+* `int` – 4 bytes (commonly), stored in 2’s complement for signed integers.
+
+* `float` – Single precision floating point (IEEE 754, 4 bytes).
+
+* `char` – 1 byte, stores a single character or small integer.
+
+* `double` – Double precision floating point (8 bytes).
+
+* `struct` – Group of variables under one name, stored in contiguous memory with possible padding.
+
+* `union` – Variables share the same memory location, size equals the largest member.
+
+* `array` – Sequential elements of the same type in memory.
+
+* `enum` – Named integer constants.
+
+* `pointer` – Stores a memory address, size depends on architecture (e.g., 8 bytes in 64-bit).
+
+* `void` – No value, used for functions that return nothing or generic pointers (void*).
+
+**Key idea**:
+* The compiler uses type information to know:
+
+* How many bytes to read/write.
+
+* How to interpret (decode) the raw bits.
+
+* Layout and ordering in memory (e.g., A before B in a struct is compiler/ABI-defined).
 ****
