@@ -171,5 +171,5 @@ Example: Interrupting execution, editing instructions in memory, and resuming.
 
 * How to interpret (decode) the raw bits.
 
-* Layout and ordering in memory (e.g., A before B in a struct is compiler/ABI-defined).
+* Layout and ordering in memory (e.g., `A` before `B` in a struct is compiler/ABI-defined).
 ****
