@@ -139,3 +139,24 @@ Writing the function body is both a declaration and a definition.
 The compiler needs declarations to know the interface, but needs the definition to actually generate code.
 
 ****
+```
+#include <stdio.h>
+
+int main(){
+    unsigned char a;
+    scanf("%d",&a);
+    printf("%d\n",a);
+    a+=200;
+    printf("%d\n",a);
+    return 0;
+}
+```
+result:
+```
+100
+100
+44
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+```
+****
