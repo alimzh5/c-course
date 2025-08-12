@@ -238,7 +238,7 @@ Uninitialized variables have indeterminate values and should not be used before 
 ### Storage Class in C
 Specifies where data is stored, its initial value, scope (where it can be accessed), and lifetime (how long it exists).
 
-1. **auto (default for local variables)**
+**1. auto (default for local variables)**
 
   * **Storage**: Stack.
 
@@ -250,7 +250,7 @@ Specifies where data is stored, its initial value, scope (where it can be access
 
   * **Note**: Most local variables are auto by default.
 
-2. **extern**
+**2. extern**
 
   * **Storage**: Data segment (initialized) or BSS segment (uninitialized).
 
@@ -262,7 +262,7 @@ Specifies where data is stored, its initial value, scope (where it can be access
 
   * **Purpose**: Access global variables defined in another file or location.
 
-3. **static**
+**3. static**
    
   * **Storage**: Data segment (if initialized) or BSS (if uninitialized).
 
@@ -276,7 +276,7 @@ Specifies where data is stored, its initial value, scope (where it can be access
 
   * **Lifetime**: Entire program run.
 
-4. **register**
+**4. register**
   * **Storage**: CPU register (if available).
 
   * **Initial value**: Garbage.
