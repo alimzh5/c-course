@@ -234,3 +234,56 @@ The `\n` in `printf` does not fix the bug — it only forces the output buffer t
 
 Uninitialized variables have indeterminate values and should not be used before assignment.
 *****
+
+### Storage Class in C
+Specifies where data is stored, its initial value, scope (where it can be accessed), and lifetime (how long it exists).
+
+1. **auto (default for local variables)**
+
+  * **Storage**: Stack.
+
+  * **Initial value**: Garbage (indeterminate).
+
+  * **Scope**: Block {} where it is defined.
+
+  * **Lifetime**: Until the block ends.
+
+  * **Note**: Most local variables are auto by default.
+
+2. **extern**
+
+  * **Storage**: Data segment (initialized) or BSS segment (uninitialized).
+
+  * **Initial value**: 0 if not explicitly initialized.
+
+  * **Scope**: Global.
+
+  * **Lifetime**: Entire program run.
+
+  * **Purpose**: Access global variables defined in another file or location.
+
+3. **static**
+   
+  * **Storage**: Data segment (if initialized) or BSS (if uninitialized).
+
+  * **Initial value**: 0 if not initialized.
+
+  * **Scope**:
+
+    * **Global static**: visible only within the file.
+
+    * **Local static**: visible only in the block, but retains value between calls.
+
+  * **Lifetime**: Entire program run.
+
+4. **register**
+  * **Storage**: CPU register (if available).
+
+  * **Initial value**: Garbage.
+
+  * **Scope**: Block.
+
+  * **Lifetime**: Block.
+
+  * **Note**: Similar to auto, but stored in registers for faster access.
+****
