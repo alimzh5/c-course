@@ -107,4 +107,35 @@ For example, a CPU with 4 cores can run 4 threads truly in parallel.
 * Languages like C produce such code that interacts closely with hardware and OS.
 
 ****
+**Declaration**
 
+* Tells the compiler what exists (name, return type, parameters) but not how it works.
+
+* No memory allocation for code or variables (except for extern variables).
+
+* Example:
+```
+int sum(int a, int b); // Declaration only
+```
+
+**Definition**
+
+* Provides the actual implementation or allocates memory.
+
+* Contains the body of the function or initializes variables.
+
+* Example:
+
+```
+int sum(int a, int b) { // Definition
+    return a + b;
+}
+```
+
+**In functions**:
+
+Writing the function body is both a declaration and a definition.
+
+The compiler needs declarations to know the interface, but needs the definition to actually generate code.
+
+****
