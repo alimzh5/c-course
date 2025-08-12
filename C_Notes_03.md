@@ -287,3 +287,37 @@ Specifies where data is stored, its initial value, scope (where it can be access
 
   * **Note**: Similar to auto, but stored in registers for faster access.
 ****
+
+`main` **Function Signatures in C**
+* `int main(int argc, char* argv[], char **envp)`
+
+* `int main(int argc, char* argv[])`
+
+* `int main()`
+
+All are valid forms, with the first providing access to command-line arguments and environment variables.
+
+*****
+
+**Function Basics in C**
+* Syntax:
+
+```
+return_type function_name(parameter_type parameter_name, ...);
+```
+* C does not support optional parameters—all arguments must be provided explicitly when calling the function.
+
+* C does not support function overloading—you cannot have multiple functions with the same name but different parameters.
+
+* Function names must be unique at the global scope. No spaces allowed in names.
+
+*****
+
+Example:
+```
+int add(int a, int b) {
+    return a + b;
+}
+```
+
+******
