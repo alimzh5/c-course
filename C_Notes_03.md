@@ -218,3 +218,19 @@ The crash is caused by using the wrong `scanf` format specifier. `%d` expects an
 
 The `\n` in `printf` does not fix the bug — it only forces the output buffer to flush immediately, changing when you see printed values and the error message. The actual detection happens at the end of the function, not at the moment of the overflow.
 ****
+### Variable definition in C
+
+* A variable definition allocates memory for the variable and optionally initializes it.
+
+* Examples:
+
+  * `int data;` → defines `data` without initialization (contains garbage value).
+
+  * `int data2;` → same as above.
+
+  * `int a, b, c;` → defines three uninitialized integers.
+
+  * `int d = 1, e = 0, f;` → defines three integers, initializes `d` to 1, `e` to 0, and leaves `f` uninitialized.
+
+Uninitialized variables have indeterminate values and should not be used before assignment.
+*****
