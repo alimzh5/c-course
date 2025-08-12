@@ -214,3 +214,7 @@ void test(int a, int b) {
 }
 ```
 ****
+The crash is caused by using the wrong `scanf` format specifier. `%d` expects an `int` (4 bytes) but the variable is `unsigned char` (1 byte). This causes `scanf` to overwrite memory on the stack (stack buffer overflow), triggering stack smashing detected when the function returns.
+
+The `\n` in `printf` does not fix the bug — it only forces the output buffer to flush immediately, changing when you see printed values and the error message. The actual detection happens at the end of the function, not at the moment of the overflow.
+****
