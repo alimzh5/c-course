@@ -192,3 +192,25 @@ Compile-time: The compiler can give errors or warnings if it detects issues from
 
 Runtime: Errors or crashes that happen while the program is running. These are not caught by the compiler.
 ****
+### Order of declaration and definition in functions
+
+* A declaration of a function must appear before it is used, because the compiler reads the code from top to bottom and needs to know the function’s interface in advance.
+
+* A definition (implementation) can appear after the function is used, as long as a declaration was provided earlier.
+
+* Example:
+
+```
+// Declaration
+void test(int, int);
+
+int main() {
+    test(3, 4); // OK, compiler already knows test()
+}
+
+// Definition
+void test(int a, int b) {
+    // function body
+}
+```
+****
