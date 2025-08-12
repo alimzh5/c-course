@@ -160,3 +160,35 @@ result:
 Aborted (core dumped)
 ```
 ****
+```
+// Declaration only
+void test(int, int);
+```
+* Here, you only tell the compiler that a function named test exists, takes two int parameters, and returns nothing.
+
+* No body → no implementation → no actual code generated for test.
+
+Definition example (with implementation):
+
+```
+// Definition
+void test(int a, int b) {
+    // function body
+}
+```
+* Here you really implement the body, so the compiler generates machine code for it.
+
+****
+```
+gcc -c -g 01.c -o 01
+````
+The `-c` option tells GCC to compile only and stop before the linking stage.
+
+This produces an object file (`01` in this case) without creating an executable.
+
+**Compile-time vs. Runtime warnings/errors**
+
+Compile-time: The compiler can give errors or warnings if it detects issues from the source code (e.g., type mismatch, unused variables).
+
+Runtime: Errors or crashes that happen while the program is running. These are not caught by the compiler.
+****
