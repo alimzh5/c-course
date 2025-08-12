@@ -321,3 +321,19 @@ int add(int a, int b) {
 ```
 
 ******
+
+### Two ways to use a function call and print the result
+**Method 1**: Store the function’s return value in a variable, then print it.
+
+```
+int sum = add(a, b);
+printf("%d", sum);
+```
+**Method 2**: Call the function directly inside `printf`.
+
+```
+printf("%d", add(a, b));
+```
+Both produce the same output. The choice depends on whether you need to reuse the result later.
+
+****
