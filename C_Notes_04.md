@@ -129,3 +129,22 @@ Here, `items` is an array inside each structure.
 You first pick which structure in `data3` you want, then which index in its `items` array you want.
 
 ******
+### Two methods of struct initialization in C:
+
+**1.Designated Initializers**:
+
+```
+struct point {
+    int x, y;
+} p1, p2 = {.x = 0, .y = 11}, p3;
+```
+
+Here, `p2` is initialized using designated initializers, where each field is explicitly assigned a value.
+
+**2.Standard Initialization**:
+
+```
+struct point p3 = {1, 2};
+```
+Here, the members are initialized in order according to their declaration in the struct.
+****
