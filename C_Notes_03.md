@@ -448,7 +448,6 @@ int main(){
 }
 ```
 result:
-
 12
 
 8
