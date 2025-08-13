@@ -410,3 +410,24 @@ result: 21
 * Multiplication (`*`), division (`/`), and modulus (`%`) have higher precedence than addition (`+`) and subtraction (`-`).
 
 *******
+**Empty statement in `if` condition**
+
+* **Old style**:
+
+```
+if (a == 20) { ; }
+printf("yes");
+```
+* **New style**:
+```
+if (a == 20) { }
+printf("yes");
+```
+**Result**: In both cases, `"yes"` is always printed because the `if` body is empty and the `printf` is outside the `if` statement.
+
+**Note**: The semicolon (`;`) as a statement means “do nothing” but still counts as the body of the `if`.
+****
+
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/if_in_c.png)
+
+*******
