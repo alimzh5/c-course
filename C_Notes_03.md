@@ -362,3 +362,51 @@ Both produce the same output. The choice depends on whether you need to reuse th
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/code_in_c.png)
 
 ******
+
+```
+#include <stdio.h>
+
+int add(int a,int b);
+
+int main(){
+    int x=10;
+    int y=11;
+    int c = add(x,y);
+    printf("%d",c);
+
+}
+
+int add(int a ,int b){
+    return a+b;
+}
+```
+result: 21
+********
+
+### Arithmetic Operators in C
+
+* **Assignment & compound assignment**:
+`=` `+=` `-=` `*=` `/=` `%=`
+
+* **Basic arithmetic**:
+`+` `-` `*` `/` `%` (modulus)
+
+**Bitwise Operators**
+
+* `&` (Bitwise AND)
+
+* `|` (Bitwise OR)
+
+* `^` (Bitwise XOR)
+
+* `~` (Bitwise NOT)
+
+* `>>` (Right shift)
+
+* `<<` (Left shift)
+
+**Precedence**:
+
+* Multiplication (`*`), division (`/`), and modulus (`%`) have higher precedence than addition (`+`) and subtraction (`-`).
+
+*******
