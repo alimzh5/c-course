@@ -193,4 +193,9 @@ int main(){
     return 0;
 }
 ```
+
+```
+struct info mydata = {10, 1000, 'a', {1,2,3}};
+```
+
 ******
