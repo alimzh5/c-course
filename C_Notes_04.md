@@ -76,3 +76,7 @@ In C, when you write `A` for an array, it represents the address of the first el
 
 ```
 ****
+
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/struct.png)
+
+*****
