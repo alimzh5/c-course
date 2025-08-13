@@ -71,7 +71,8 @@ Pointer arithmetic automatically accounts for the size of the data type. For exa
 
 In C, when you write `A` for an array, it represents the address of the first element. Writing `A + 2` moves the pointer by 2 elements, not 2 bytes. The actual memory offset depends on the data type size (e.g., for `int`, it moves `2 * sizeof(int)` bytes). Using `*(A + 2)` accesses the value at the third element of the array.
 
-‍‍```
+```
 *(A + 2)
+
 ```
 ****
