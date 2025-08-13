@@ -532,3 +532,50 @@ switch (a) {
 * Fall-through behavior: If a `break` is omitted, execution continues into the next case(s).
 
 *******
+
+Using `break` in `switch-case`
+
+* A `break;` statement is used to exit the switch immediately after a case executes.
+
+* Without `break`, execution falls through to the next case(s).
+
+* So we put `break` to prevent the following cases from executing.
+
+Example:
+
+```
+switch(x) {
+    case 1:
+        printf("One\n");
+        break; // prevents case 2, 3, etc. from executing
+    case 2:
+        printf("Two\n");
+        break;
+}
+```
+
+*******
+
+**Grouping multiple cases in** `switch`
+* You can stack multiple `case` labels without `break` between them to execute the same code block.
+
+* Example:
+
+```
+switch (x) {
+    case 0:
+    case 5:
+    case 10:
+        printf("10\n");
+        break;
+}
+```
+* Meaning: if `x` is 0, 5, or 10, the same `printf` is executed.
+
+* `break`; ensures the program exits the `switch` after executing the shared block.
+
+* This technique is called fall-through grouping and is useful for handling multiple discrete values in the same way.
+
+****
+
+
