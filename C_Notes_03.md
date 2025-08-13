@@ -358,3 +358,7 @@ Both produce the same output. The choice depends on whether you need to reuse th
 
 2) Lack of future knowledge – The compiler cannot predict all later operations during early code generation, so it may store intermediate results in memory instead of keeping them in registers. For example, when adding two variables, it might first store them in memory and then add, even though it could have added them directly.
 *******
+
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/code_in_c.png)
+
+******
