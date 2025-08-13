@@ -148,3 +148,21 @@ struct point p3 = {1, 2};
 ```
 Here, the members are initialized in order according to their declaration in the struct.
 ****
+
+```
+#include <stdio.h>
+
+int main(){
+    char w[5]={'A','B','C','D','E'};
+    for(int i=0;i<5;i++){
+        printf("%c\n",w[i]);
+    }
+}
+```
+result:
+A
+B
+C
+D
+E
+*****
