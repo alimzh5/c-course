@@ -199,3 +199,62 @@ struct info mydata = {10, 1000, 'a', {1,2,3}};
 ```
 
 ******
+
+```
+#include <stdio.h>
+
+int main(){
+    struct info{
+        int a;
+        long int b;
+        char c;
+        int f[3];
+    };
+
+    struct info mydata[3];
+    mydata[0].a=10;
+    mydata[0].b=1000;
+    mydata[0].c='a';
+    mydata[0].f[0]=1;
+    mydata[0].f[1]=2;
+    mydata[0].f[2]=3;
+
+    mydata[1].a=20;
+    mydata[1].b=2000;
+    mydata[1].c='b';
+    mydata[1].f[0]=4;
+    mydata[1].f[1]=5;
+    mydata[1].f[2]=6;
+
+    mydata[2].a=30;
+    mydata[2].b=3000;
+    mydata[2].c='c';
+    mydata[2].f[0]=7;
+    mydata[2].f[1]=8;
+    mydata[2].f[2]=9;
+
+    return 0;
+}
+```
+
+**Array of Structures Initialization (Manual)**
+
+* You can create an array of structures and assign values to each element individually:
+
+```
+struct info mydata[3];
+mydata[0].a = 10;  mydata[0].b = 1000;  mydata[0].c = 'a';  mydata[0].f[0] = 1; ...
+mydata[1].a = 20;  ...
+mydata[2].a = 30;  ...
+```
+
+* This works, but for cleaner code, you can also use initializer lists:
+
+```
+struct info mydata[3] = {
+    {10, 1000, 'a', {1,2,3}},
+    {20, 2000, 'b', {4,5,6}},
+    {30, 3000, 'c', {7,8,9}}
+};
+```
+****
