@@ -478,3 +478,57 @@ result:
 * On microcontrollers, such loops are sometimes intentionally used to keep the system active and prevent entering a halt/low-power state.
 
 ******
+
+`while` **vs** `do while`
+`while` – Checks the condition first. If false initially, the loop body may run zero times.
+
+`do while` – Executes the loop body once before checking the condition. Always runs at least once.
+
+*******
+
+`for` **loop syntax**
+```
+for (init; condition; update) {
+    // loop body
+}
+```
+Example:
+
+```
+for (a = 0; a < 10; a = a + 1) { }
+```
+* Any expression can be used in each part.
+
+* `while(1);` is equivalent to `for( ; ; );`.
+
+* Any section can be left empty and handled inside the loop body (e.g., updates done inside).
+
+* Initialization can declare variables (`int i = 0;`) which exist only during the loop’s lifetime.
+
+*********
+
+**Loop control**
+`continue;` – Skips the rest of the loop body and jumps to the next iteration.
+
+`break;` – Immediately exits the loop, regardless of the condition.
+
+**********
+
+`switch` **statement**
+```
+switch (a) {
+    case 1:
+        ...
+    default:
+        ...
+}
+```
+* The variable must be an integer type.
+
+* Cases test discrete, constant values.
+
+* Faster than multiple `if` statements because it uses a jump table for direct branching, while `if` needs sequential comparisons.
+
+* Fall-through behavior: If a `break` is omitted, execution continues into the next case(s).
+
+*******
