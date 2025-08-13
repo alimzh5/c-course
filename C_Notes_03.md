@@ -471,7 +471,7 @@ result:
 
 * `while (1);` – Infinite loop with no body, keeps the CPU fully busy doing nothing.
 
-**Note** on `while(1);`
+**Note on** `while(1);`
 
 * On general-purpose CPUs, this wastes resources (100% CPU usage) and prevents the rest of the code from running.
 
