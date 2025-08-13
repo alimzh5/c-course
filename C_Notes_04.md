@@ -47,3 +47,5 @@ int I[2][3][4]; // 3D array: 2 × 3 × 4 = 24 elements
 * Memory is stored in row-major order (last index changes fastest).
 
 *******
+
+![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/ARRAY.png)
