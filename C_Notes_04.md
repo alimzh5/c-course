@@ -49,3 +49,22 @@ int I[2][3][4]; // 3D array: 2 × 3 × 4 = 24 elements
 *******
 
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/ARRAY.png)
+******
+
+### Pointer Arithmetic Example
+In C, the name of an array (e.g., `A`) represents the address of its first element.
+
+* `A` → address of the first element (`&A[0]`)
+
+* `A + 2` → address of the third element (`&A[2]`)
+
+Example:
+
+```
+int test = 0;
+printf("%ld\n", A + 2);  // prints address of A[2]
+printf("%ld\n", &test);  // prints address of variable test
+```
+Pointer arithmetic automatically accounts for the size of the data type. For example, with `int` (usually 4 bytes), `A + 2` moves 8 bytes ahead from `A`.
+
+*******
