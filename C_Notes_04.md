@@ -171,3 +171,26 @@ D
 
 E
 *****
+
+#include <stdio.h>
+
+int main(){
+    struct info{
+        int a;
+        long int b;
+        char c;
+        int f[3];
+    };
+
+    struct info mydata;
+    mydata.a=10;
+    mydata.b=1000;
+    mydata.c='a';
+    mydata.f[0]=1;
+    mydata.f[1]=2;
+    mydata.f[2]=3;
+    
+    return 0;
+}
+
+******
