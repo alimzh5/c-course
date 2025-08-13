@@ -600,3 +600,59 @@ int main(){
 }
 ```
 ****
+
+### Increment (‍`++`) and Decrement (`--`) Operators in C
+
+**1.Post-increment**:
+
+```
+b = a++;
+```
+Assigns the current value of `a` to `b`, then increments `a`.
+
+Example: `a = 5; b = a++;` → `b = 5`, `a = 6`.
+
+**2.Pre-increment**:
+
+```
+b = ++a;
+```
+Increments `a` first, then assigns the new value to `b`.
+
+Example: `a = 5; b = ++a;` → `a = 6`, `b = 6`.
+
+**3.Post-decrement**:
+
+```
+b = a--;
+```
+Assigns the current value of a to b, then decrements a.
+
+Example: `a = 5; b = a--;` → `b = 5`, `a = 4`.
+
+**4.Pre-decrement**:
+
+```
+b = --a;
+```
+Decrements a first, then assigns the new value to b.
+
+Example: `a = 5; b = --a;` → `a = 4`, `b = 4`.
+
+**Confusing expressions**
+
+**5.**
+```
+b = +++1; // Invalid
+```
+Explanation: You cannot apply increment (`++`) to a literal like `1`. This will cause a compile-time error.
+
+**6.**
+```
+b = 1---a; // Valid if interpreted as 1 - (--a)
+```
+Explanation: `1---a` is parsed as `1 - (--a)` (pre-decrement of `a`), not as three operators.
+
+Example: `a = 5; b = 1---a;` → `a = 4`, `b = 1 - 4 = -3`.
+
+*****
