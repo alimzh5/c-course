@@ -337,3 +337,24 @@ printf("%d", add(a, b));
 Both produce the same output. The choice depends on whether you need to reuse the result later.
 
 ****
+### Function Call in C
+
+* When a function is called, the compiler replaces the call with code that:
+
+  1) Copies the arguments into the function’s parameters (by value, unless pointers are used).
+
+  2) Jumps to the function’s code.
+
+  3) Executes the function body.
+
+  4) Returns control (and a return value, if any) to the caller.
+
+* In C, arguments are passed by value by default, meaning the function receives a copy of each argument, not the original variable.
+*****
+
+### Why the compiler’s generated assembly may have extra instructions
+
+1) Not optimized yet – In non-optimized builds, the compiler generates straightforward code without removing redundancies. This often means more load/store instructions and less efficient execution.
+
+2) Lack of future knowledge – The compiler cannot predict all later operations during early code generation, so it may store intermediate results in memory instead of keeping them in registers. For example, when adding two variables, it might first store them in memory and then add, even though it could have added them directly.
+*******
