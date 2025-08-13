@@ -160,9 +160,14 @@ int main(){
 }
 ```
 result:
+
 A
+
 B
+
 C
+
 D
+
 E
 *****
