@@ -48,6 +48,8 @@ int I[2][3][4]; // 3D array: 2 × 3 × 4 = 24 elements
 
 *******
 
+**array**
+
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/ARRAY.png)
 ******
 
@@ -76,6 +78,8 @@ In C, when you write `A` for an array, it represents the address of the first el
 
 ```
 ****
+
+**struct**
 
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/struct.png)
 
