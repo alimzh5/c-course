@@ -84,3 +84,48 @@ In C, when you write `A` for an array, it represents the address of the first el
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/struct.png)
 
 *****
+
+**1. Array of Structures**
+
+This is when we have a structure type, and then create an array where each element is one structure.
+Example:
+
+```
+struct info {
+    int v1;
+    char c1;
+    long v2;
+};
+
+struct info data3[10]; // Array of 10 structures
+
+data3[0].v1 = 100;
+data3[0].c1 = 'A';
+data3[0].v2 = 10000;
+
+data3[1].v1 = 200;
+// ...
+```
+Here, `data3` is an array, and `data3[0]` is the first structure in the array.
+You can access each field of a specific structure using the `.` operator.
+
+**2. Array Inside a Structure**
+This is when one of the members of the structure is itself an array.
+Example:
+
+```
+struct info {
+    int items[4];
+};
+
+struct info data3[10]; // Array of 10 structures, each with an array inside
+
+data3[0].items[0] = 1;
+data3[0].items[1] = 1;
+data3[0].items[2] = 1;
+data3[0].items[3] = 1;
+```
+Here, `items` is an array inside each structure.
+You first pick which structure in `data3` you want, then which index in its `items` array you want.
+
+******
