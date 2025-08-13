@@ -431,3 +431,24 @@ printf("yes");
 ![Alt Text](https://github.com/alimzh5/c-course/blob/main/repository/if_in_c.png)
 
 *******
+```
+#include <stdio.h>
+
+int add(int a,int b){
+    return a+b;
+}
+
+int main(){
+    int a,b,sum;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    sum=add(a,b);
+    if(sum==20) printf("yes");
+    else printf("no");
+}
+```
+result:
+12
+8
+`yes`
+*******
