@@ -577,5 +577,26 @@ switch (x) {
 * This technique is called fall-through grouping and is useful for handling multiple discrete values in the same way.
 
 ****
+```
+#include <stdio.h>
 
+int main(){
 
+    int  a=10;
+    switch (a)
+    {
+    case 1:
+        printf("no");
+        break;
+    
+    case 10:
+        printf("yes");
+        break;
+    
+    default:
+        printf("kill");
+        break;
+    }
+}
+```
+****
