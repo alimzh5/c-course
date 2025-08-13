@@ -454,3 +454,27 @@ result:
 
 `yes`
 *******
+
+`else if` **and** `else`
+
+* `else if { }` – Executes the block if the previous `if` was false and this condition is true.
+
+* else `if (...) { ... }` – Same, but with a specific condition.
+
+* `else if` can be chained, and a simple `else` executes if none of the previous conditions are true.
+
+`while` **loops**
+
+* `while (...) { }` – Executes repeatedly as long as the condition is true.
+
+* `while (1) { }` – Infinite loop (never ends unless a `break` or `return` is used).
+
+* `while (1);` – Infinite loop with no body, keeps the CPU fully busy doing nothing.
+
+**Note** on `while(1);`
+
+* On general-purpose CPUs, this wastes resources (100% CPU usage) and prevents the rest of the code from running.
+
+* On microcontrollers, such loops are sometimes intentionally used to keep the system active and prevent entering a halt/low-power state.
+
+******
