@@ -2,12 +2,12 @@
 
 ### 1.Compile with debug info (no optimization):
 ```
-gcc -g -O0 ccod1.c -o test46
+gcc -g -O0 ccod1.c -o test
 ```
 
 ### 2.Start gdb:
 ```
-gdb ./test46
+gdb ./test
 ```
 
 ### 3.Set a breakpoint at main:
