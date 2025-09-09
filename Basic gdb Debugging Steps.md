@@ -2,7 +2,7 @@
 
 ### 1.Compile with debug info (no optimization):
 ```
-gcc -g -O0 ccod1.c -o test
+gcc -g -O0 code.c -o test
 ```
 
 ### 2.Start gdb:
