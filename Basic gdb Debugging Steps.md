@@ -1,46 +1,46 @@
-Basic gdb Debugging Steps
+# Basic gdb Debugging Steps
 
-Compile with debug info (no optimization):
-
+### 1.Compile with debug info (no optimization):
+```
 gcc -g -O0 ccod1.c -o test46
+```
 
-
-Start gdb:
-
+### 2.Start gdb:
+```
 gdb ./test46
+```
 
-
-Set a breakpoint at main:
-
+### 3.Set a breakpoint at main:
+```
 (gdb) break main
+```
 
-
-Enable source code view (TUI):
-
+### 4.Enable source code view (TUI):
+```
 (gdb) layout src
+```
 
-
-Run the program:
-
+### 5.Run the program:
+```
 (gdb) run
+```
 
+### 6.Step through the code:
 
-Step through the code:
+`next` → execute next line (don’t enter functions)
 
-next → execute next line (don’t enter functions)
+`step` → step into functions
 
-step → step into functions
+### 7.Inspect variables:
 
-Inspect variables:
+`print var` → show value
 
-print var → show value
+`print &var` → show address
 
-print &var → show address
+`x/s var` → show string at pointer
 
-x/s var → show string at pointer
+### 8.Continue / quit:
 
-Continue / quit:
+`continue` → run until next breakpoint
 
-continue → run until next breakpoint
-
-quit → exit gdb
+`quit` → exit gdb
